@@ -1,45 +1,46 @@
-### 🔐 **General Password Wordlists:**
+### 🔐 **Top JWT Secret Wordlists:**
 
-1. **rockyou.txt**
+1. **BuggySolid’s JWT Secrets List**
+
+   * 🔗: [https://github.com/buggysolid/bugbounty-wordlist/blob/main/jwt.secrets.list](https://github.com/buggysolid/bugbounty-wordlist/blob/main/jwt.secrets.list)
+   * Curated list specifically for JWT brute-forcing.
+
+2. **rockyou.txt**
 
    * 🔗: `/usr/share/wordlists/rockyou.txt` (Kali/Linux)
    * Very common passwords. Widely used.
 
-2. **SecLists – `Passwords/Leaked-Databases/`**
+3. **SecLists – `Passwords/Leaked-Databases/`**
 
    * 🔗: [https://github.com/danielmiessler/SecLists](https://github.com/danielmiessler/SecLists)
    * Contains RockYou, CrackStation, and other leaked dbs.
 
-3. **CrackStation.txt**
+4. **CrackStation.txt**
 
    * 🔗: [https://crackstation.net/files/crackstation.txt.gz](https://crackstation.net/files/crackstation.txt.gz)
    * 1.5B entries; very large and effective.
 
-4. **Probable-Wordlists**
+5. **Probable-Wordlists**
 
    * 🔗: [https://github.com/berzerk0/Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
-   * Focused on real-world password patterns.
+   * Real-world password patterns.
 
----
-
-### 🎯 **JWT-specific / Developer-Oriented Lists:**
-
-5. **JWT-Simple-Secrets.txt**
+6. **JWT-Simple-Secrets.txt**
 
    * 🔗: [https://github.com/wallarm/jwt-secrets](https://github.com/wallarm/jwt-secrets)
    * Small list of common JWT secrets like `secret`, `admin`, etc.
 
-6. **fuzz-JWT-secret.txt**
+7. **fuzz-JWT-secret.txt**
 
    * 🔗: [https://github.com/danielmiessler/SecLists/blob/master/Passwords/JWT/fuzz-JWT-secret.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/JWT/fuzz-JWT-secret.txt)
-   * Made specifically for testing weak JWT secrets.
+   * Built for weak JWT secret detection.
 
-7. **commonspeak2-wordlists**
+8. **commonspeak2-wordlists**
 
    * 🔗: [https://github.com/assetnote/commonspeak2](https://github.com/assetnote/commonspeak2)
-   * Developer-chosen secrets, API keys, etc.
+   * Developer terms, API keywords, tech-related secrets.
 
-8. **10k-most-common.txt**
+9. **10k-most-common.txt**
 
    * 🔗: [https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10k-most-common.txt)
-   * Focused and effective for smaller bruteforce attempts.
+   * Efficient for short brute-force runs.
