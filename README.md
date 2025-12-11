@@ -1,19 +1,43 @@
-# Bruteforce-JWT-Secret
+# Bruteforce‑JWT‑Secret
 
-A simple Python script to brute-force the secret key of a JWT using a wordlist.
+A simple Python tool that brute‑forces the secret key of an HMAC‑signed JWT using a wordlist. Supports HS256, HS384, and HS512.
 
 ## Features
 
-- Supports JWTs signed with HS256
-- Reads secrets from a custom wordlist
-- Prints the decoded payload if the key is found
+* Manually computes HMAC signatures
+* Supports URL‑safe base64 handling
+* Works with any custom wordlist
+* Status updates every 1000 attempts
 
-## Requirements
+---
 
-- Python 3.x
-- PyJWT (`pip install PyJWT`)
+## Example JWT
+
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGVzdCJ9.UF3opocnYSRNeqS5Csnan8AdqtLTrzuxvoXz-DBzC40
+```
+
+### Example Wordlist
+
+```
+admin
+test
+secret
+mysecret123
+password
+qwerty
+123456
+letmein
+```
+
+---
 
 ## Usage
 
-```bash
-python3 main.py
+Save the JWT in a file (`jwt_token.txt`) and the wordlist in another file (`Wordlist1`).
+
+Run:
+
+```
+python3 main.py -m jwt_token.txt -s Wordlist1
+```
